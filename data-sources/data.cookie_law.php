@@ -77,6 +77,7 @@ Class datasourcecookie_law extends StaticXMLDatasource
 		{
 			document.cookie = \'cookie_accept=1; expires=Tue, 31 Dec 2999 23:59:59 UTC; path=/\';
 			document.getElementById(\'cookies_bar\').className = \'\';
+      document.getElementById(\'cookies_bar\').style.display = \'none\';
 			cookie_action();
 			return false;
 		};
@@ -84,6 +85,7 @@ Class datasourcecookie_law extends StaticXMLDatasource
 		{
 			document.cookie = \'cookie_accept=0; path=/\';
 			document.getElementById(\'cookies_bar\').className = \'\';
+      document.getElementById(\'cookies_bar\').style.display = \'none\';
 			return false;
 		}
 		document.getElementById(\'cookies_disclaimer\').onclick = function(){ return false; }
